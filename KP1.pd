@@ -1,0 +1,34 @@
+#N canvas 112 162 1093 342 10;
+#X obj 446 56 key;
+#X obj 446 80 sel 32;
+#X obj 446 226 dac~;
+#X obj 446 144 karplusStrongSynthesis;
+#X floatatom 623 62 5 0 0 0 - - -;
+#X obj 623 79 send noteValue;
+#X floatatom 623 118 5 0 200 0 - - -;
+#X floatatom 624 174 5 75 100 0 - - -;
+#X obj 623 135 send lowpassfreq;
+#X obj 624 194 send decay;
+#X obj 628 239 hsl 128 15 0 3000 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X obj 663 258 send pluckpos;
+#X obj 446 203 *~ 0.5;
+#X floatatom 625 259 5 0 0 0 - - -;
+#X text 96 145 Sends and receives signal from the Karplus Strong model
+;
+#X text 362 214 Audio Output;
+#X text 179 63 Generates signal when space bar is pressed;
+#X text 717 63 Sends the frequency of the note to be played;
+#X text 727 120 Sends the low pass filter's cutoff frequency;
+#X text 693 181 Sends the amount of attenuation for the delays;
+#X text 765 242 Sends the plucking position;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 3 0 12 0;
+#X connect 4 0 5 0;
+#X connect 6 0 8 0;
+#X connect 7 0 9 0;
+#X connect 10 0 11 0;
+#X connect 10 0 13 0;
+#X connect 12 0 2 0;
+#X connect 12 0 2 1;
