@@ -1,0 +1,5 @@
+#N canvas 426 229 903 381 12;
+#X obj 42 63 trainSynthesis;
+#X obj 27 293 dac~;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
