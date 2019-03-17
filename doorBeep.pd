@@ -1,0 +1,21 @@
+#N canvas 512 203 450 300 12;
+#X obj 309 189 bng 54 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 81 96 lop~ 3000;
+#X obj 124 171 *~;
+#X obj 139 217 *~ 0.1;
+#X obj 194 89 line~;
+#X msg 223 25 1 0 \, 0 2000;
+#X obj 65 53 osc~ 300;
+#X obj 140 261 send~ doorBeep;
+#X text 299 169 Door Close;
+#X msg 125 24 0.25;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 4 0 2 1;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
+#X connect 9 0 6 1;
+#X coords 0 -1 1 1 80 80 2 296 167;
