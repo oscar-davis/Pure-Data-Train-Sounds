@@ -1,7 +1,5 @@
-#N canvas 234 134 727 144 12;
-#X obj 2 1 engine;
-#X obj 82 1 motor;
-#X obj 322 1 master;
-#X obj 162 1 wheels;
-#X obj 242 1 air;
-#X obj 242 81 doorBeep;
+#N canvas 26 188 1098 247 12;
+#X obj 61 55 engine;
+#X obj 141 55 motor;
+#X obj 301 55 master;
+#X obj 221 55 wheels;
