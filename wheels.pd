@@ -1,4 +1,4 @@
-#N canvas 539 46 570 562 12;
+#N canvas 454 182 753 562 12;
 #X obj 191 201 karplusStrongSynthesis;
 #X obj 368 138 send noteValue;
 #X obj 368 194 send lowpassfreq;
@@ -21,10 +21,12 @@
 #X obj 191 168 receive wheelBump;
 #X obj 178 326 *~;
 #X floatatom 418 103 5 0 0 0 - - -, f 5;
-#X floatatom 466 224 5 0 0 0 - - -, f 5;
 #X obj 191 227 lop~ 200;
-#X obj 191 268 *~ 0.8;
-#X connect 0 0 21 0;
+#X obj 586 96 receive speed;
+#X floatatom 543 278 5 0 0 0 - - -, f 5;
+#X obj 512 228 * 27;
+#X obj 191 268 *~ 1;
+#X connect 0 0 20 0;
 #X connect 4 0 5 0;
 #X connect 4 0 6 0;
 #X connect 8 0 1 0;
@@ -39,8 +41,10 @@
 #X connect 17 0 0 0;
 #X connect 18 0 15 0;
 #X connect 19 0 1 0;
-#X connect 20 0 3 0;
-#X connect 21 0 22 0;
-#X connect 22 0 16 0;
-#X connect 22 0 18 0;
+#X connect 20 0 24 0;
+#X connect 21 0 23 0;
+#X connect 23 0 22 0;
+#X connect 23 0 3 0;
+#X connect 24 0 16 0;
+#X connect 24 0 18 0;
 #X coords 0 -1 1 1 80 160 2 277 380;
